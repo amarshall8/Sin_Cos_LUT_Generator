@@ -12,7 +12,7 @@
 % .formatted stores a formatted string with the correct datatype initializers
 
 % The final output can be directly copy pasted into C/C++ microprocessor code
-% IDE for use SPWM generation or for other functions that require a fast sine lookup.
+% Can be used for SPWM generation or for other functions that require a fast sine lookup table.
 
 function sinCosTable = generateSinCosTable(nData, period, peakToPeak, posOffset, wave, format)
 stepSize = period/nData; % determine wave generation step size
