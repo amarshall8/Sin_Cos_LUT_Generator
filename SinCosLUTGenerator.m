@@ -8,7 +8,10 @@
 % Wave type of Sine or Cosine ('s' or 'c')
 % Format for output ('h' or 'd' for Hex or Decimal respectively)
 
-% The final output can be directly copy pasted into a C/C++ microprocessor
+% Function output .rawValues stores a direct array of the generated output
+% .formatted stores a formatted string with the correct datatype initializers
+
+% The final output can be directly copy pasted into C/C++ microprocessor code
 % IDE for use SPWM generation or for other functions that require a fast sine lookup.
 
 function sinCosTable = generateSinCosTable(nData, period, peakToPeak, posOffset, wave, format)
